@@ -1,7 +1,5 @@
 # LoggableChat
 
------
-
 A simple plugin for PocketMine-MP that listens for any chat or commands sent by players and writes them to the server's log.
 This emulates the behavior you'd find in PC edition server software such as Spigot.
 
