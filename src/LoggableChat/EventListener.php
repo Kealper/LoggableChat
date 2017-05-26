@@ -16,9 +16,9 @@ class EventListener implements Listener {
 	public function onPlayerCommandPreprocessEvent(PlayerCommandPreprocessEvent $event) {
 		$message = $event->getMessage();
 		if (substr($message, 0, 1) === "/") {
-			$this->plugin->getServer()->getLogger()->info($event->getPlayer()->getDisplayname() . " issued server command: " . $message);
+			$this->plugin->getServer()->getLogger()->info($event->getPlayer()->getName() . " issued server command: " . $message);
 		} else {
-			$this->plugin->getServer()->getLogger()->info($event->getPlayer()->getDisplayname() . ": " . $message);
+			$this->plugin->getServer()->getLogger()->info($event->getPlayer()->getName() . ": " . $message);
 		}
 	}
 	
